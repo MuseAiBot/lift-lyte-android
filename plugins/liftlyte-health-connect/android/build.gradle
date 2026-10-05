@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace "app.liftlyte.healthconnect"
+    compileSdk 36
+
+    defaultConfig {
+        minSdkVersion 28
+        targetSdkVersion 36
+        versionCode 1
+        versionName "1.0.0"
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    implementation "androidx.health.connect:connect-client:1.1.0"
+    implementation project(':capacitor-android')
+}

@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+plugins/*/node_modules/
+
+# Build outputs
+dist/
+dev-dist/
+dist-ssr/
+*.local
+
+# Capacitor native projects (regenerated in CI via cap add/sync)
+android/
+ios/
+
+# Android signing / local config
+*.keystore
+*.jks
+local.properties
+.gradle/
+**/build/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
